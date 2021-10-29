@@ -1,0 +1,17 @@
+
+.expert-img{
+    position: relative;
+}
+.expert-details{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 60%;
+}
+.design:hover .expert-details{
+    display: block;
+    overflow: hidden;
+    background-color: rgba(76, 4, 245, 0.815);
+}

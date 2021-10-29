@@ -1,0 +1,19 @@
+.set-background{
+    background-image: url(https://max-themes.net/demos/altair/upload/1600x1200-12.jpg);
+    background-size: cover;
+}
+.card-description{
+    position: relative;
+}
+.card-icon{
+    display: none;
+    position: absolute;
+    top: -34px;
+}
+.card-description .card-icon{
+    display: block;
+    overflow: hidden;
+}
+.icon-handel{
+    margin-left: 36%;
+}

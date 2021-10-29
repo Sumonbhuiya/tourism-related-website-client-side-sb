@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Tan James",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-8.jpg",
+        "describe": "people on organized sightseeing and individual"
+    },
+    {
+        "id": "2",
+        "name": "Tarin Akter",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-7.jpg",
+        "describe": "person who provides assistance & heritage clint"
+    },
+    {
+        "id": "3",
+        "name": "Sami Fields",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-2.jpg",
+        "describe": "person who information on cultural service"
+    },
+    {
+        "id": "4",
+        "name": "Den Harvey",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-6.jpg",
+        "describe": "person who historical and contemporary heritage"
+    }
+]

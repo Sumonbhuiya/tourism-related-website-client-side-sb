@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Tarragona (Spain)",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-40-650x650.jpg",
+        "describe": "Tarragona. Tarragona is located on the Mediterranean coast, 60 miles southwest of Barcelona, in the region of Catalonia. Tarragona is a port city located in northeast Spain on the Costa Daurada by the Mediterranean Sea. One of the top attractions of Spains Catalonia region, Tarragona is blessed with sunshine, a beautiful coastline, and interesting ancient monuments.",
+        "price": "$17400",
+        "time": "4 Days",
+        "rating": "5.0 Good"
+    },
+    {
+        "id": "2",
+        "name": "Tainan (Taiwan)",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-45-650x650.jpg",
+        "describe": "Tainan is the oldest city in Taiwan. After the end of Dutch domination on the island, Tainan became Taiwan’s administrative center. Tainan is the place to go if you want to experience the classical side of Formosa. It’s a living museum where every alley can show you a slice of history. Established in the 17th century, it was the capital of Taiwan during the Qing Dynasty.",
+        "price": "$19300",
+        "time": "3 Days",
+        "rating": "7.3 Superb"
+    },
+    {
+        "id": "3",
+        "name": "Seminyak (Bali)",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-47-650x650.jpg",
+        "describe": "Bali is the most popular island holiday destination in the Indonesian archipelago. Seminyak is an upscale, luxury destination in Southern Bali; as opposed to the popular Kuta, Seminyak is known to be more sophisticated and laid-back. With high-end spas and boutique shops abounding in the last ten years, the town has gone through one of the most rapid transformations in all of Bali.",
+        "price": "$18950",
+        "time": "5 Days",
+        "rating": "9.0 Superb"
+    },
+    {
+        "id": "4",
+        "name": "Hudson (New York)",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-8.jpg",
+        "describe": "Hudson Sailing is New Yorks premier destination. The Empire State Building is the most iconic and recognized symbol of New York City, and a visit to this legendary structure and its observation deck is a must. This classic New York City attraction gives millions of visitors each year spectacular views of New York City and the surrounding area from its 86th- and 102nd-floor observatories.",
+        "price": "$21500",
+        "time": "4 Days",
+        "rating": "7.8 Good"
+    },
+    {
+        "id": "5",
+        "name": "Eiffel Tower (Paris)",
+        "img": "https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-11.jpg",
+        "describe": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. Some of the most memorable things to do in Paris include visiting the Eiffel Tower, the Arc de Triomphe and Notre-Dame Cathedral. During the evening, experiencing one of the legendary Moulin Rouge cabaret shows, strolling through some of the most picturesque neighborhoods, like Montmartre, or climbing the Montparnasse Tower are a must.",
+        "price": "$18400",
+        "time": "6 Days",
+        "rating": "9.3 Superb"
+    },
+    {
+        "id": "6",
+        "name": "Rome (Italy)",
+        "img": "https://max-themes.net/demos/altair/upload/1600x1200-10-560x460.jpg",
+        "describe": "Rome, as mentioned above, is one of the best places to visit in Italy. Other popular destinations include Venice, Naples, and Florence. If you want to visit this country, another worth-knowing fact about Italy is that Vatican City is also located within the country. Technically, the Vatican is a country unto itself, though. The 5 most visited places in Rome are: #1 Pantheon, #2 The Colosseum, #3 Trevi Fountain, #4 Sistine Chapel and #5 The Roman Forum.",
+        "price": "$29800",
+        "time": "8 Days",
+        "rating": "8.0 Good"
+    }
+]

@@ -1,0 +1,27 @@
+.shadow-hover:hover{
+    box-shadow: 5px 5px 10px rgb(141, 141, 141);
+    transform: scale(1.05);
+}
+.show-details{
+    position: relative;
+}
+.hide-details{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+    padding-top: 100px;
+}
+.shadow-hover:hover .hide-details{
+    display: block;
+    overflow: hidden;
+    background-color: rgba(236, 236, 236, 0.5);
+}
+.handel-button{
+    background-color: rgb(77, 75, 75);
+}
+.handel-button:hover{
+    background-color: rgb(10, 7, 7);
+}
