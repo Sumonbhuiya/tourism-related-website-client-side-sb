@@ -12,8 +12,8 @@
         align-items: center;
         display: block;
         margin-top: 20px;
-        padding: 5px;
-        border: 1px solid gray;
+        padding: 12px;
+        border: 1px solid rgb(70, 66, 66);
         border-radius: 5px;
         width: 100%;
     }

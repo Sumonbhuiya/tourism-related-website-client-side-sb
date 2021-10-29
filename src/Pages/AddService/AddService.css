@@ -2,18 +2,21 @@
     background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-parallax-img-1.jpg);
     background-size: cover;
 }
+.form-background{
+    background-color: rgba(138, 152, 165, 0.377);
+}
 @media (min-width: 576px) {
     .add-service{
         width: 50%;
         margin-inline: auto;
-        padding: 20px 30px 60px;
+        padding: 20px 30px 50px;
     }
     .add-service input, textarea{
         align-items: center;
         display: block;
         margin-top: 20px;
-        padding: 5px;
-        border: 1px solid gray;
+        padding: 7px;
+        border: 1px solid rgb(59, 58, 58);
         border-radius: 5px;
         width: 100%;
     }

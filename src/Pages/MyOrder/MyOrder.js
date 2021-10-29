@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ShowMyOrder from '../../Components/ShowMyOrder/ShowMyOrder';
+import TotalServices from '../../Components/TotalServices/TotalServices';
 import useAuth from '../../Hooks/useAuth';
 
 const MyOrder = () => {
@@ -20,9 +21,9 @@ const MyOrder = () => {
 
     return (
         <div>
-            <h1 className="pt-5 text-success text-uppercase pb-4">Orders using your email</h1>
-            <Container className="pb-4" style={{ fontFamily: "cursive" }}>
-                <Row xs lg={2} md sm={1} className="g-3 align-items-center py-5">
+            <Container className="pb-4 bg-light mt-5" style={{ fontFamily: "cursive" }}>
+                <h1 className="py-4 text-success text-uppercase pb-4">Orders by using your email</h1>
+                <Row xs lg={2} md sm={1} className="g-3 align-items-center pb-5">
                     {
                         orderquantity.map(service => <ShowMyOrder
                             key={service._id}
@@ -31,6 +32,7 @@ const MyOrder = () => {
                     }
                 </Row>
             </Container>
+            <TotalServices></TotalServices>
         </div>
     );
 };

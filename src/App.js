@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import AuthProvider from './Contexts/AuthProvider';
 import AddService from './Pages/AddService/AddService';
@@ -40,22 +41,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            {/*
-            <PrivateRoute path="/ambulance">
-              <Ambulance></Ambulance>
-            </PrivateRoute>
-            <PrivateRoute path="/ambulancedetails/:ambulancedetailsId">
-              <AmbulanceDetails></AmbulanceDetails>
-            </PrivateRoute>
-            <PrivateRoute path="/contact">
-              <Contact></Contact>
-            </PrivateRoute>
-            <Route path="/register">
-              <Register></Register>
-            </Route>
             <Route exact path="*">
               <NotFound></NotFound>
-            </Route> */}
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

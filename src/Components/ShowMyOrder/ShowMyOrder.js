@@ -20,7 +20,7 @@ const ShowMyOrder = (props) => {
 
     // Delete a service
     const handelDelete = id => {
-        const permission = window.confirm('Are you sure you want to delete!!')
+        const permission = window.confirm('Are you sure you want to cancel this service!!')
         if (permission) {
             const url = `https://pure-island-78807.herokuapp.com/use_services/${id}`;
             fetch(url, {
@@ -30,7 +30,7 @@ const ShowMyOrder = (props) => {
                 .then(data => {
                     console.log(data);
                     if (data.deletedCount) {
-                        alert('Deleted successfully')
+                        alert('Cancel successfully')
                     }
 
                 })

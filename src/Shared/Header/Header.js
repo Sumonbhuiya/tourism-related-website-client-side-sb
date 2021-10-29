@@ -17,7 +17,6 @@ const Header = () => {
                             {user.uid || user.email ?
                                 <Nav>
                                     <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                                    <Nav.Link as={Link} to="/place_order">Place Order</Nav.Link>
                                     <Nav.Link as={Link} to="/my-order">My Orders</Nav.Link>
                                     <Nav.Link as={Link} to="/manage_service">Manage All Orders</Nav.Link>
                                     <Nav.Link as={Link} to="/add_service">Add A New Service</Nav.Link>
@@ -40,7 +39,6 @@ const Header = () => {
                                 :
                                 <Nav>
                                     <Nav.Link as={Link} to="/login"><span className="text-danger fw-bold fs-5">login</span></Nav.Link>
-                                    {/* <Nav.Link eventKey={2} as={Link} to="/register"><span className="text-danger fw-bold fs-5">Registration</span></Nav.Link> */}
                                 </Nav>
                             }
                         </Nav>

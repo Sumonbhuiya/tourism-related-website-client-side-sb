@@ -33,19 +33,19 @@ const Footer = () => {
                                             OUR RECENT POSTS
                                         </Card.Text>
                                         <Card.Text className="text-start">
-                                            <Link className=" text-white fw-light text-decoration-none" to="">Standard blogs with image</Link>
+                                            <Link className=" text-white fw-light text-decoration-none" to=""><i className="fas fa-chevron-right"></i> Standard blogs with image</Link>
                                         </Card.Text>
                                         <Card.Text className="text-start">
-                                            <Link className=" text-white fw-light text-decoration-none" to="">Amazing fullwidth post</Link>
+                                            <Link className=" text-white fw-light text-decoration-none" to=""><i className="fas fa-chevron-right"></i> Amazing fullwidth post</Link>
                                         </Card.Text>
                                         <Card.Text className="text-start">
-                                            <Link className=" text-white fw-light text-decoration-none" to="">Link post</Link>
+                                            <Link className=" text-white fw-light text-decoration-none" to=""><i className="fas fa-chevron-right"></i> Link post</Link>
                                         </Card.Text>
                                         <Card.Text className="text-start">
-                                            <Link className=" text-white fw-light text-decoration-none" to="">Quota post</Link>
+                                            <Link className=" text-white fw-light text-decoration-none" to=""><i className="fas fa-chevron-right"></i> Quota post</Link>
                                         </Card.Text>
                                         <Card.Text className="text-start">
-                                            <Link className=" text-white fw-light text-decoration-none" to="">Sidebar post with slideshow</Link>
+                                            <Link className=" text-white fw-light text-decoration-none" to=""><i className="fas fa-chevron-right"></i> Sidebar post with slideshow</Link>
                                         </Card.Text>
                                     </Col>
                                 </Row>

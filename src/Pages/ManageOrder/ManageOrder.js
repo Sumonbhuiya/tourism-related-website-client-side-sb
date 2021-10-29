@@ -56,11 +56,15 @@ const ManageOrder = () => {
 
     return (
         <div>
-            <Container className="py-5 px-3">
+            <h1 className="py-4 text-success">Review All Orders</h1>
+            <Container className="pb-5 px-3">
                 <Row xs lg={1} md sm={1}>
                     <Col lg={12}>
                         <Row xs={1} lg={2} md sm={1}>
                             <Col lg={2} md sm={12} className="py-3">
+                                <Card.Text className="text-start">
+                                    <Link className=" text-primary fw-bold text-decoration-none" to="/my-order"><i className="far fa-user-circle"></i> My Service</Link>
+                                </Card.Text>
                                 <Card.Text className="text-start">
                                     <Link className=" text-primary fw-bold text-decoration-none" to="/manage_service"><i className="fas fa-user-circle"></i> Service List</Link>
                                 </Card.Text>

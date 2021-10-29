@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import { useParams } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import './DetailsForm.css'
 
@@ -11,7 +12,7 @@ const DetailsForm = () => {
 
     //process order
     const onSubmit = data => {
-        fetch(`http://localhost:5000/place_order`, {
+        fetch(`https://pure-island-78807.herokuapp.com/place_order`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -44,8 +45,11 @@ const DetailsForm = () => {
 
                 <input placeholder="Contact no" {...register("phone", { required: true })} />
 
-                <input type="submit" />
+                <input type="submit" value="Add This Service" />
             </form>
+            <div className="pb-5">
+                <NavLink to="/home" className="text-decoration-none text-white fs-4">Go to <button className="bg-warning text-white rounded-pill px-3"> Back</button></NavLink>
+            </div>
         </div>
     );
 };
