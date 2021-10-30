@@ -1,0 +1,11 @@
+.display-image{
+    background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/h1-background-img-2.jpg);
+    background-size: cover;
+}
+@media (min-width: 576px) {
+    .control-input{
+        width: 50%;
+        margin-inline: auto;
+        padding: 5px 10px;
+    }
+}

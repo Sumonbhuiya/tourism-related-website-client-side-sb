@@ -7,7 +7,7 @@ const SlideShow = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100" style={{ height: '600px' }}
+                        className="d-block w-100" style={{ height: '500px' }}
                         src="https://max-themes.net/demos/altair/upload/1600x1200-1.jpg"
                         alt="First slide"
                     />
@@ -21,7 +21,7 @@ const SlideShow = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100" style={{ height: '600px' }}
+                        className="d-block w-100" style={{ height: '500px' }}
                         src="https://max-themes.net/demos/altair/upload/1600x1200-2.jpg"
                         alt="Second slide"
                     />

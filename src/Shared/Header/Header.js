@@ -16,14 +16,14 @@ const Header = () => {
                         <Nav className="me-auto">
                             {user.uid || user.email ?
                                 <Nav>
-                                    <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                                    <Nav.Link as={Link} className="text-warning" to="/home">Home</Nav.Link>
                                     <Nav.Link as={Link} to="/my-order">My Orders</Nav.Link>
                                     <Nav.Link as={Link} to="/manage_service">Manage All Orders</Nav.Link>
                                     <Nav.Link as={Link} to="/add_service">Add A New Service</Nav.Link>
                                 </Nav>
                                 :
                                 <Nav>
-                                    <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                                    <Nav.Link as={Link} className="text-danger" to="/home">Home</Nav.Link>
                                 </Nav>
                             }
                         </Nav>

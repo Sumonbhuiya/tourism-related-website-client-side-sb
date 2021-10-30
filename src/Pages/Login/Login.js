@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import './Login.css'
 
 
 const Login = () => {
@@ -19,8 +20,8 @@ const Login = () => {
 
 
     return (
-        <div className="">
-            <div className="p-5 control-form">
+        <div className="display-image">
+            <div className="p-5">
                 <br /><br />
                 <form className="row g-3">
                     <div className="col-12">
@@ -29,15 +30,15 @@ const Login = () => {
                     <div className="col-12">
                         <input type="password" className="form-control control-input" id="inputAddress" placeholder="Password" required />
                     </div>
-                    <div className="row mb-3 text-danger"></div>
                     <div className="col-12">
                         <button type="submit" className="form-control control-input btn-danger">log in</button>
                     </div>
                 </form>
+                <br />
+                <div>---------------------</div>
                 <div className="col-12 p-4 text-center">
                     <button onClick={handelGoogleLogIn} className="btn btn-warning"><i className="fab fa-google fs-4 pe-2 pt-1 text-white"></i> Google Sign In</button>
-                </div>
-                <br /><br /><br /><br />
+                </div><br /><br /><br />
             </div>
         </div >
     );
