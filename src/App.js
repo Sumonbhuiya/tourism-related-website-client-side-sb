@@ -3,12 +3,14 @@ import './App.css';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import AuthProvider from './Contexts/AuthProvider';
+import AboutUs from './Pages/AboutUs/AboutUs';
 import AddService from './Pages/AddService/AddService';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import UserFeedback from './Pages/UserFeedback/UserFeedback';
 import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
 
@@ -38,6 +40,12 @@ function App() {
             <PrivateRoute path="/manage_service">
               <ManageOrder></ManageOrder>
             </PrivateRoute>
+            <Route path="/about_us">
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path="/feedback">
+              <UserFeedback></UserFeedback>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>

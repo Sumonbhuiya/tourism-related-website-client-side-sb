@@ -20,8 +20,8 @@ const Expert = (props) => {
                                 <Card.Text className="">
                                     <Col className="text-white fw-bold px-2">{describe}</Col>
                                 </Card.Text>
-                                <Container>
-                                    <Nav className="mx-auto w-100">
+                                <Container className="mx-auto w-75">
+                                    <Nav>
                                         <Nav.Link href="https://www.facebook.com/"><i className="fab fa-facebook-f text-white"></i></Nav.Link>
                                         <Nav.Link href="https://twitter.com/Twitch"><i className="fab fa-twitter text-white"></i></Nav.Link>
                                         <Nav.Link href="https://www.instagram.com/"><i className="fab fa-instagram text-white" ></i></Nav.Link>

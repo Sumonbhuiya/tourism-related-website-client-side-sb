@@ -1,0 +1,24 @@
+.feedback-image{
+    background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-10.jpg);
+    background-size: cover;
+}
+.feedback{
+    width: 100%;
+    margin-inline: auto;
+    padding: 60px 30px;
+}
+
+.feedback input{
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid rgb(70, 66, 66);
+    border-radius: 5px;
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .cover-image{
+        height: 370px;
+    }
+}

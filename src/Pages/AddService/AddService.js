@@ -20,7 +20,7 @@ const AddService = () => {
             <div className="py-3 px-2 bg-secondary bg-gradient">
                 <h3 className="text-info" style={{ fontFamily: "Satisfy, cursive", }}>Plan The</h3>
                 <h1 className="text-dark fw-bold" style={{ fontFamily: "Rockwell" }}>Perfect Holiday</h1>
-                <p className="text-white fs-6">Describe your perfect holiday. We should say: where you would go and <br /> who you would go.</p>
+                <p className="text-white fs-6">Describe your perfect holiday. We should say: where you would go and <br /> who you would't go.</p>
             </div>
             <div className="service-background">
                 <h2 className="pt-5 text-white text-uppercase" style={{ fontFamily: "cursive" }}>Add a new Place here</h2>

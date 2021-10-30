@@ -2,42 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row, Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const ManageOrder = () => {
-    const [manageService, setManageService] = useState([]);
+const UserFeedback = () => {
+    const [manageFeedback, setManageFeedback] = useState([]);
 
     useEffect(() => {
         // load data
-        fetch(`https://pure-island-78807.herokuapp.com/use_services`)
+        fetch(`https://pure-island-78807.herokuapp.com/users_feedback`)
             .then(res => res.json())
-            .then(data => setManageService(data));
+            .then(data => setManageFeedback(data));
     }, [])
 
-    //Update status
-    const handelAccept = id => {
-        const permission = window.confirm('You want to accept this service?')
-        if (permission) {
-            const url = `https://pure-island-78807.herokuapp.com/use_services/${id}`;
-            fetch(url, {
-                method: 'PUT',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify()
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.modifiedCount > 0) {
-                        alert('Updated successfully')
-                    }
-                })
-        }
-    }
-
-    // Delete a service
+    // Delete a feedback
     const handelDelete = id => {
         const permission = window.confirm('Are you sure you want to delete!!')
         if (permission) {
-            const url = `https://pure-island-78807.herokuapp.com/use_services/${id}`;
+            const url = `https://pure-island-78807.herokuapp.com/users_feedback/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -45,9 +24,9 @@ const ManageOrder = () => {
                 .then(data => {
                     console.log(data);
                     if (data.deletedCount) {
-                        alert('Deleted successfully')
-                        const remaining = manageService.filter(service => service._id !== id);
-                        setManageService(remaining)
+                        alert('Deleted feedback successfully')
+                        const found = manageFeedback.filter(opinion => opinion._id !== id);
+                        setManageFeedback(found)
                     }
 
                 })
@@ -56,7 +35,7 @@ const ManageOrder = () => {
 
     return (
         <div>
-            <h1 className="py-4 text-success">Review All Orders</h1>
+            <h1 className="py-4 text-success">Review All Feedbacks</h1>
             <Container className="pb-5 px-3">
                 <Row xs lg={1} md sm={1}>
                     <Col lg={12}>
@@ -79,22 +58,20 @@ const ManageOrder = () => {
                                 <Table responsive>
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
                                             <th>Email</th>
-                                            <th>Order</th>
-                                            <th>Status</th>
+                                            <th>About</th>
+                                            <th>Description</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {
-                                            manageService.map(service =>
-                                                <tr key={service._id}>
-                                                    <td>{service.name}</td>
-                                                    <td>{service.email}</td>
-                                                    <td>{service.order_id}</td>
-                                                    <td><Button variant="secondary" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
-                                                    <td><Button variant="secondary" onClick={() => handelDelete(service._id)}><i className="fas fa-trash-alt"></i></Button></td>
+                                            manageFeedback.map(opinion =>
+                                                <tr key={opinion._id}>
+                                                    <td>{opinion.email}</td>
+                                                    <td>{opinion.about}</td>
+                                                    <td>{opinion.describe}</td>
+                                                    <td><Button variant="secondary" onClick={() => handelDelete(opinion._id)}><i className="fas fa-trash-alt"></i></Button></td>
                                                 </tr>
                                             )}
                                     </tbody>
@@ -108,4 +85,4 @@ const ManageOrder = () => {
     );
 };
 
-export default ManageOrder;
+export default UserFeedback;

@@ -30,6 +30,7 @@ const DetailsForm = () => {
     return (
         <div className="set-image">
             <h1 className="pt-5 text-white text-uppercase" style={{ fontFamily: "cursive" }}>Give Your Information </h1>
+            <h3 className="text-white" style={{ fontFamily: "cursive" }}>For proceed your order... </h3>
             <form className="details-form " onSubmit={handleSubmit(onSubmit)} >
                 <input defaultValue={serviceId} style={{ display: 'none' }} {...register("order_id")} />
                 <input defaultValue="Pending" style={{ display: 'none' }} {...register("status")} />

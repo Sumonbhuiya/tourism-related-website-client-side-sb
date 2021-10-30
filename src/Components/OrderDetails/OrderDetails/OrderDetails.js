@@ -26,7 +26,7 @@ const OrderDetails = () => {
         <div className="bg-light">
             <h1 className="pt-5 text-dark text-uppercase">See Details</h1>
             <Container className="pb-4" style={{ fontFamily: "cursive" }}>
-                <Row xs lg={1} md sm={1} className="align-items-center py-5">
+                <Row xs lg={2} md sm={1} className="align-items-center py-5">
                     {
                         orderDetails.map(service => <OrderDetail
                             key={service._id}
