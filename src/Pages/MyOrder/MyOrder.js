@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import AnsQuestion from '../../Components/AnsQuextion/AnsQuestion';
 import ShowMyOrder from '../../Components/ShowMyOrder/ShowMyOrder';
-import TotalServices from '../../Components/TotalServices/TotalServices';
 import useAuth from '../../Hooks/useAuth';
 
 const MyOrder = () => {
@@ -34,7 +34,7 @@ const MyOrder = () => {
                 </Row>
             </Container>
             {/* call different route  */}
-            <TotalServices></TotalServices>
+            <AnsQuestion></AnsQuestion>
         </div>
     );
 };

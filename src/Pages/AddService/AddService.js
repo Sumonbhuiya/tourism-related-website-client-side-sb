@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
+import TotalServices from "../../Components/TotalServices/TotalServices"
 import './AddService.css'
 
 const AddService = () => {
@@ -38,6 +39,8 @@ const AddService = () => {
                 </form>
                 <br />
             </div>
+            {/* call route */}
+            <TotalServices></TotalServices>
         </>
     );
 };
