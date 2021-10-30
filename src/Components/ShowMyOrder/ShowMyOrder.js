@@ -31,6 +31,7 @@ const ShowMyOrder = (props) => {
                     console.log(data);
                     if (data.deletedCount) {
                         alert('Cancel successfully')
+                        window.location.reload(false);
                     }
 
                 })
@@ -47,7 +48,7 @@ const ShowMyOrder = (props) => {
                             <Col xs={12} lg={4} md sm={4}>
                                 <Card.Img className="rounded image-handel" src={service.img} />
                             </Col>
-                            <Col xs={12} lg={8} md sm={8} className="align-items-center pt-4">
+                            <Col xs={12} lg={8} md sm={8} className="align-items-center pt-2">
                                 <Card.Title className="text-start text-primary">{service.name}</Card.Title>
                                 <Row lg={1} xs={1} md sm={1} className="align-items-center pb-2">
                                     <Col lg={6} xs={6} sm={6}>

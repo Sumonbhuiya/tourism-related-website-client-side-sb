@@ -16,7 +16,7 @@ const Exparts = () => {
         <div>
             {/* experts header  */}
             <div className="pt-5 px-2">
-                <h2 className="text-info" style={{ fontFamily: "Satisfy, cursive", }}>Our Best</h2>
+                <h3 className="text-info" style={{ fontFamily: "Satisfy, cursive", }}>Our Best</h3>
                 <h1 className="text-dark fw-bold">TRAVEL EXPERTS</h1>
                 <p className="text-muted fs-5">Our experts who understand where you want to go, how to <br /> get you there and the priceless experiences you want to have. <br /> We get you and we get you there.</p>
             </div>

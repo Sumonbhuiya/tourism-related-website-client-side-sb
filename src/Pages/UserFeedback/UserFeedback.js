@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row, Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import QuarentineTour from '../../Components/QuarentineTour/QuarentineTour';
 
 const UserFeedback = () => {
     const [manageFeedback, setManageFeedback] = useState([]);
@@ -85,6 +86,7 @@ const UserFeedback = () => {
                     </Col>
                 </Row>
             </Container>
+            <QuarentineTour></QuarentineTour>
         </div>
     );
 };

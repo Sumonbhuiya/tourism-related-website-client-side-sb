@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row, Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import QuarentineTour from '../../Components/QuarentineTour/QuarentineTour';
 
 const ManageOrder = () => {
     const [manageService, setManageService] = useState([]);
@@ -13,7 +14,7 @@ const ManageOrder = () => {
     }, [])
 
     //Update status for user
-    const handelAccept = id => {
+    const handelAccept = (id) => {
         const permission = window.confirm('You want to accept this service?')
         if (permission) {
             const url = `https://pure-island-78807.herokuapp.com/use_services/${id}`;
@@ -28,6 +29,7 @@ const ManageOrder = () => {
                 .then(data => {
                     if (data.modifiedCount > 0) {
                         alert('Updated successfully')
+                        window.location.reload(false);
                     }
                 })
         }
@@ -84,7 +86,7 @@ const ManageOrder = () => {
                                         <tr>
                                             <th>Name</th>
                                             <th>Email</th>
-                                            <th>Order</th>
+                                            <th>Order Id</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -108,6 +110,7 @@ const ManageOrder = () => {
                     </Col>
                 </Row>
             </Container>
+            <QuarentineTour></QuarentineTour>
         </div>
     );
 };
