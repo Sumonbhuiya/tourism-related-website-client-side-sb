@@ -79,7 +79,7 @@ const ManageOrder = () => {
                             </Col>
                             {/* table for see orders  */}
                             <Col xs lg={10} md sm={12} className="align-items-center bg-light" style={{ fontFamily: "cursive" }}>
-                                <Table responsive>
+                                <Table responsive hover>
                                     <thead>
                                         <tr>
                                             <th>Name</th>

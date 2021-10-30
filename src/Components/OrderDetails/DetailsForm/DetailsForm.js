@@ -50,7 +50,7 @@ const DetailsForm = () => {
 
                 <input placeholder="Contact no" {...register("phone", { required: true })} />
 
-                <input type="submit" value="Add This Service" />
+                <input style={{ fontFamily: "cursive" }} type="submit" value="Add This Service" />
             </form>
             {/* back button  */}
             <div className="pb-5">

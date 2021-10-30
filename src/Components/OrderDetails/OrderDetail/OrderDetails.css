@@ -10,7 +10,7 @@
     padding: 60px 30px;
 }
 
-.feedback input{
+.feedback input, textarea{
     align-items: center;
     display: block;
     margin-top: 20px;
@@ -19,9 +19,16 @@
     border-radius: 5px;
     width: 100%;
 }
+.feedback input:hover, textarea:hover{
+    transform: scale(1.02);
+}
 /* details section top image set  */
 @media (min-width: 576px) {
     .cover-image{
         height: 370px;
+    }
+    .cover-image:hover{
+        transform: scale(1.01);
+        transition-duration: 1s;
     }
 }

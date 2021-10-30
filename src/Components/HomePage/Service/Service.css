@@ -2,6 +2,7 @@
 .shadow-hover:hover{
     box-shadow: 5px 5px 10px rgb(141, 141, 141);
     transform: scale(1.05);
+    transition-duration: 1s;
 }
 /* card look design  */
 .show-details{

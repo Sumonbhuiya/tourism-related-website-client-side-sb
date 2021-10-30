@@ -34,7 +34,7 @@ const AddService = () => {
                     <input type="text" {...register("price", { required: true })} placeholder="Cost" />
                     <input type="text" {...register("time", { required: true })} placeholder="How many days?" />
                     <input type="text" {...register("rating", { required: true })} placeholder="Rating" />
-                    <input type="submit" value="Add" />
+                    <input style={{ fontFamily: "cursive" }} type="submit" value="Add" />
                 </form>
                 <br />
             </div>

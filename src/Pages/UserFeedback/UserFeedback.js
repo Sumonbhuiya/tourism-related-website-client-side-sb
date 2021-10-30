@@ -58,7 +58,7 @@ const UserFeedback = () => {
                             </Col>
                             {/* table for show all feedbacks  */}
                             <Col xs lg={10} md sm={12} className="align-items-center bg-light" style={{ fontFamily: "cursive" }}>
-                                <Table responsive>
+                                <Table responsive striped hover>
                                     <thead>
                                         <tr>
                                             <th>Email</th>
