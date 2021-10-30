@@ -1,7 +1,9 @@
+/* feedback section form background image  */
 .feedback-image{
     background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-10.jpg);
     background-size: cover;
 }
+/* form control  */
 .feedback{
     width: 100%;
     margin-inline: auto;
@@ -17,6 +19,7 @@
     border-radius: 5px;
     width: 100%;
 }
+/* details section top image set  */
 @media (min-width: 576px) {
     .cover-image{
         height: 370px;

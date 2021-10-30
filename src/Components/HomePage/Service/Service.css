@@ -1,7 +1,9 @@
+/* box shadow  */
 .shadow-hover:hover{
     box-shadow: 5px 5px 10px rgb(141, 141, 141);
     transform: scale(1.05);
 }
+/* card look design  */
 .show-details{
     position: relative;
 }
@@ -19,6 +21,7 @@
     overflow: hidden;
     background-color: rgba(236, 236, 236, 0.5);
 }
+/* button design  */
 .handel-button{
     background-color: rgb(77, 75, 75);
 }

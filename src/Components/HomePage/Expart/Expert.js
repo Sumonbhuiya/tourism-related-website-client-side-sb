@@ -3,12 +3,12 @@ import { Card, Col, Container, Nav, Row } from 'react-bootstrap';
 import './Expert.css'
 
 const Expert = (props) => {
-    // take data using props from json 
+    // take data using props 
     const { name, img, describe } = props.expert;
     return (
         <div>
             <Col>
-                {/* viewing data using cards */}
+                {/* viewing guide data using cards */}
                 <Card className="design">
                     <Row>
                         <Col xs={12} lg={12} md={12} sm={12} className="expert-img">

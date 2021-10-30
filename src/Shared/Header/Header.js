@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image, Nav, Navbar } from 'react-bootstrap';
+import { Container, Image, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
@@ -10,9 +10,11 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
                 <Container>
+                    {/* logo  */}
                     <Nav.Link as={Link} to="/home"><Image src="https://th.bing.com/th/id/R.6080c0a48ee67a6c713b5d4579988387?rik=Ti%2fjt4ayLsxdNw&riu=http%3a%2f%2fwww.wheelocktravel.com%2fwp-content%2fuploads%2f2015%2f12%2fWheelock-Travel-Logo-Master-NoWords.png&ehk=3v5nEwPMA3QFVqr17BuqSmCMibKvvCZn9lFBOVZp60w%3d&risl=&pid=ImgRaw&r=0" style={{ width: '150px', height: '80px' }} /> </Nav.Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
+                        {/* nav button handel as link */}
                         <Nav className="me-auto">
                             {user.uid || user.email ?
                                 <Nav>
@@ -29,7 +31,7 @@ const Header = () => {
                             }
                         </Nav>
                         <Nav>
-                            {/* chack user  */}
+                            {/* check user  */}
                             {user.uid || user.email ?
                                 <Nav>
                                     <Navbar.Text>
@@ -39,7 +41,8 @@ const Header = () => {
                                 </Nav>
                                 :
                                 <Nav>
-                                    <Nav.Link as={Link} to="/login"><span className="text-danger fw-bold fs-5">login</span></Nav.Link>
+                                    <Nav.Link as={Link} to="/login"><span className="text-danger fs-5">Sign In</span></Nav.Link>
+                                    <Nav.Link as={Link} to="/register"><Button variant="success">Try Free</Button></Nav.Link>
                                 </Nav>
                             }
                         </Nav>

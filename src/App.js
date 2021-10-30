@@ -10,6 +10,7 @@ import Login from './Pages/Login/Login';
 import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import Register from './Pages/Register/Register';
 import UserFeedback from './Pages/UserFeedback/UserFeedback';
 import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
@@ -48,6 +49,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

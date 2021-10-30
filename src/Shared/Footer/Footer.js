@@ -9,6 +9,7 @@ const Footer = () => {
             <Container>
                 {/* footer first row */}
                 <Row lg={2} xs md sm={1} className="align-items-center pt-5">
+                    {/* column for logo and link  */}
                     <Col lg={4} sm={12} className="">
                         <Card.Body className="p-4">
                             <Card.Img variant="top" className="w-75" src="https://th.bing.com/th/id/R.6080c0a48ee67a6c713b5d4579988387?rik=Ti%2fjt4ayLsxdNw&riu=http%3a%2f%2fwww.wheelocktravel.com%2fwp-content%2fuploads%2f2015%2f12%2fWheelock-Travel-Logo-Master-NoWords.png&ehk=3v5nEwPMA3QFVqr17BuqSmCMibKvvCZn9lFBOVZp60w%3d&risl=&pid=ImgRaw&r=0" />
@@ -24,6 +25,7 @@ const Footer = () => {
                     </Col>
                     <Col lg={8} sm={12}>
                         <Row lg={2} xs={1} md sm={1} className="align-items-center py-2">
+                            {/* column for our posts  */}
                             <Col sm={12}>
                                 <Row className="pb-4">
                                     <Col xs={2} lg={4} md sm={3}>
@@ -50,6 +52,7 @@ const Footer = () => {
                                     </Col>
                                 </Row>
                             </Col>
+                            {/* column for our infos  */}
                             <Col sm={12}>
                                 <Row className="pb-4">
                                     <Col xs={1} lg={4} md sm={3}>
@@ -58,13 +61,13 @@ const Footer = () => {
                                         <Card.Text className="text-start text-white fs-4">
                                             CONTACT INFO
                                         </Card.Text>
-                                        <Card.Text className="text-start text-muted">
+                                        <Card.Text className="text-start text-white">
                                             <i className="fas fa-phone-alt text-white "></i> +880 1786 215963
                                         </Card.Text>
-                                        <Card.Text className="text-start text-muted">
+                                        <Card.Text className="text-start text-white">
                                             <i className="fas fa-envelope text-white "></i> wheelock@support.com
                                         </Card.Text>
-                                        <Card.Text className="text-start text-muted">
+                                        <Card.Text className="text-start text-white">
                                             <i className="fas fa-map-marker-alt text-white "></i> Farmgate, Mention Tower, Dhaka-1215
                                         </Card.Text>
                                     </Col>
@@ -80,6 +83,7 @@ const Footer = () => {
                             <Card.Text className="text-white">Copyright <i className="far fa-copyright text-white"></i> 2021 Wheelock Travel | SumonBhuiya</Card.Text>
                         </Card.Body>
                     </Col>
+                    {/* column for user help  */}
                     <Col lg={8}>
                         <Row lg={2} xs={2} md sm={2} className="align-items-center py-2">
                             <Col sm={6} xs={6}>

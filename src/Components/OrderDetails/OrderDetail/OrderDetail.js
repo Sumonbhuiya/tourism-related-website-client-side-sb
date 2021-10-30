@@ -7,10 +7,10 @@ import './OrderDetails.css'
 const OrderDetail = (props) => {
     const { user } = useAuth();
     const { register, handleSubmit, reset } = useForm();
-    // load information for servic details page 
+    // load information for order details page 
     const { name, img, describe, price, time, rating } = props.service
 
-    //process order
+    //for feedback form submit data
     const onSubmit = data => {
         fetch(`https://pure-island-78807.herokuapp.com/feedback`, {
             method: 'POST',
@@ -31,6 +31,7 @@ const OrderDetail = (props) => {
     return (
         <>
             <Col lg={7} md={8}>
+                {/* service details here  */}
                 <Row xs={1} lg={1} md sm={1} className="align-items-center py-2">
                     <Col lg={12} md={12} sm={12}>
                         <Card.Img className="rounded pb-2 cover-image" src={img} />
@@ -56,6 +57,7 @@ const OrderDetail = (props) => {
                     </Col>
                 </Row>
             </Col>
+            {/* feedback form  */}
             <Col lg={5} md={4} className="feedback-image">
                 <h2 className="pt-5 text-white text-uppercase" style={{ fontFamily: "cursive" }}>Give us Your Opinion </h2>
                 <form className="feedback" onSubmit={handleSubmit(onSubmit)}>

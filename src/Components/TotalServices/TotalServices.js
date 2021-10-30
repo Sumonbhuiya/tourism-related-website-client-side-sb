@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
+// details page - our total services show 
 const TotalServices = () => {
     return (
         <>
             <Container className="py-5">
+                {/* show in different column  */}
                 <Row xs={1} sm={2} md={2} lg={4} className="g-2">
                     <Col>
                         <Card.Title><i className="far fa-smile-beam fs-1  text-muted" style={{ marginBottom: "-5px" }}></i></Card.Title>

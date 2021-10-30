@@ -4,6 +4,7 @@ import OrderDetails from '../../Components/OrderDetails/OrderDetails/OrderDetail
 const PlaceOrder = () => {
     return (
         <div>
+            {/* call route  */}
             <OrderDetails></OrderDetails>
         </div>
     );

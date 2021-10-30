@@ -1,7 +1,9 @@
+/* form background image added  */
 .set-image{
     background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-parallax-img-2.jpg);
     background-size: cover;
 }
+/* for responsive purpas -large device */
 @media (min-width: 576px) {
     .details-form{
         width: 50%;
@@ -21,6 +23,7 @@
         color: red;
     }
 }
+/* for responsive purpas -small device */
 @media (max-width: 575px) {
     .details-form{
         padding: 30px;

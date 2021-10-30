@@ -7,6 +7,7 @@ import SlideShow from '../../Components/HomePage/SlideShow/SlideShow';
 const Home = () => {
     return (
         <div>
+            {/* call route from component  */}
             <SlideShow></SlideShow>
             <Services></Services>
             <Exparts></Exparts>

@@ -7,11 +7,13 @@ import useAuth from '../../Hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
+    // add spinner 
     if (isLoading) {
         return <Spinner animation="border" variant="danger" />
     }
     return (
         <Route
+            // for user location 
             {...rest}
             render={({ location }) => user.email ? children : <Redirect
                 to={{

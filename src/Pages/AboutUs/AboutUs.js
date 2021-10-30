@@ -6,9 +6,11 @@ const AboutUs = () => {
     return (
         <>
             <div>
+                {/* our team section  */}
                 <Container className="py-5">
                     <h1 className="text-dark text-uppercase pb-5">Our Team</h1>
                     <Row xs={1} sm={2} md={2} lg={4} className="g-3">
+                        {/* show members in different column  */}
                         <Col>
                             <Card.Img className="rounded-pill handel-image" src="https://max-themes.net/demos/altair/upload/2.jpg" />
                             <Card.Body>
@@ -60,9 +62,12 @@ const AboutUs = () => {
                     </Row>
                 </Container>
             </div>
+            {/* clint feedback section  */}
             <div className="bg-light">
                 <h1 className="text-dark pb-2" style={{ fontFamily: "cursive" }}>Clint Says About Us</h1>
+                {/* slideshow section  */}
                 <Carousel>
+                    {/* first slider  */}
                     <Carousel.Item>
                         <img
                             className="d-block w-100" style={{ height: '250px' }}
@@ -77,6 +82,7 @@ const AboutUs = () => {
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    {/* second slider */}
                     <Carousel.Item>
                         <img
                             className="d-block w-100" style={{ height: '250px' }}
@@ -93,9 +99,11 @@ const AboutUs = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
+            {/* different kind of services section  */}
             <div style={{ backgroundImage: "url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/cities-parallax-img-1.jpg)", backgroundSize: "cover" }}>
                 <Container className="py-5">
                     <Row xs={1} sm={2} md={2} lg={4} className="py-5 g-5">
+                        {/* show in different column  */}
                         <Col>
                             <Card.Img className="handel-image" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-1.png" />
                             <Card.Body>

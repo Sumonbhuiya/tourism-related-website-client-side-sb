@@ -3,13 +3,13 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import './ShowMyOrder.css'
 
 const ShowMyOrder = (props) => {
-    // load information for service details page 
+    // load information for show my order
     const { _id, order_id, status } = props.service;
 
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        // load data
+        // load data from database for load services
         fetch(`https://pure-island-78807.herokuapp.com/services`)
             .then(res => res.json())
             .then(data => setServices(data));
@@ -18,7 +18,7 @@ const ShowMyOrder = (props) => {
     //  filter specific data 
     const orderDetails = services.filter(service => (service._id === order_id));
 
-    // Delete a service
+    // cancel a order
     const handelDelete = id => {
         const permission = window.confirm('Are you sure you want to cancel this service!!')
         if (permission) {
@@ -40,6 +40,7 @@ const ShowMyOrder = (props) => {
     return (
         <div>
             {
+                // find my order and show them 
                 orderDetails.map(service =>
                     <Card key={service._id} className="p-3">
                         <Row>

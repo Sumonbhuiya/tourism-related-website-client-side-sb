@@ -1,7 +1,8 @@
-
+/* image sizing  */
 .expert-img{
     position: relative;
 }
+/* hover design  */
 .expert-details{
     display: none;
     position: absolute;

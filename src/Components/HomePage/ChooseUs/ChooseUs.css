@@ -1,7 +1,9 @@
+/* set background image  */
 .set-background{
     background-image: url(https://max-themes.net/demos/altair/upload/1600x1200-12.jpg);
     background-size: cover;
 }
+/* card design  */
 .card-description{
     position: relative;
 }

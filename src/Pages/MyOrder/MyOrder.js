@@ -10,7 +10,7 @@ const MyOrder = () => {
     const [orderUser, setOrderUser] = useState([]);
 
     useEffect(() => {
-        // load data
+        // load data for see my order 
         fetch(`https://pure-island-78807.herokuapp.com/use_services`)
             .then(res => res.json())
             .then(data => setOrderUser(data));
@@ -23,6 +23,7 @@ const MyOrder = () => {
         <div>
             <Container className="pb-4 bg-light mt-5" style={{ fontFamily: "cursive" }}>
                 <h1 className="py-4 text-success text-uppercase pb-4">Orders by using your email</h1>
+                {/* find user order  */}
                 <Row xs lg={2} md sm={1} className="g-3 align-items-center pb-5">
                     {
                         orderquantity.map(service => <ShowMyOrder
@@ -32,6 +33,7 @@ const MyOrder = () => {
                     }
                 </Row>
             </Container>
+            {/* call different route  */}
             <TotalServices></TotalServices>
         </div>
     );

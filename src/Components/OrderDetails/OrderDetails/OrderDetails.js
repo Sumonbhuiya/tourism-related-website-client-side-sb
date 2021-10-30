@@ -7,12 +7,12 @@ import DetailsForm from '../DetailsForm/DetailsForm';
 import OrderDetail from '../OrderDetail/OrderDetail';
 
 const OrderDetails = () => {
-    // call specific data 
+    // call specific data by using id
     const { serviceId } = useParams();
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        // load data
+        // load services data
         fetch(`https://pure-island-78807.herokuapp.com/services`)
             .then(res => res.json())
             .then(data => setServices(data));
@@ -26,6 +26,7 @@ const OrderDetails = () => {
         <div className="bg-light">
             <h1 className="pt-5 text-dark text-uppercase">See Details</h1>
             <Container className="pb-4" style={{ fontFamily: "cursive" }}>
+                {/* find services  */}
                 <Row xs lg={2} md sm={1} className="align-items-center py-5">
                     {
                         orderDetails.map(service => <OrderDetail
@@ -35,6 +36,7 @@ const OrderDetails = () => {
                     }
                 </Row>
             </Container>
+            {/* add form route  */}
             <DetailsForm></DetailsForm>
         </div>
     );

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = (props) => {
-    // take data using props from json 
+    // take data using props 
     const { _id, name, img, describe, price, time, rating } = props.service;
     return (
         <div>
@@ -12,6 +12,7 @@ const Service = (props) => {
                 {/* viewing data using cards */}
                 <Card className="shadow-hover">
                     <Row>
+                        {/* view look and data  */}
                         <Col xs={12} lg={12} md={12} sm={12} className="show-details">
                             <Card.Img className=" rounded" style={{ height: "280px" }} variant="top" src={img} />
                         </Col>

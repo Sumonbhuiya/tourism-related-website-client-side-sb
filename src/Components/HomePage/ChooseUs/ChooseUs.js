@@ -7,6 +7,7 @@ const ChooseUs = () => {
         <div className="set-background p-5">
             <h1 className="pt-5 text-white text-uppercase pb-4">why you choose us!</h1>
             <Row xs={1} md={2} lg={3} className="g-4 py-5">
+                {/* different card different column use here  */}
                 <Col className="card-description pb-4">
                     <Card className="pt-5">
                         <Card.Body>
