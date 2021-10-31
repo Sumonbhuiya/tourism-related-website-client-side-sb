@@ -5,15 +5,18 @@ import './ContactUs.css'
 const ContactUs = () => {
     return (
         <div>
+            {/* contuct us */}
             <div className="bg-success">
                 <h3 className="text-white w-75 mx-auto py-3 text-start">Contact Us</h3>
             </div>
             <Container>
+                {/* image  */}
                 <Row xs={1} lg={2} md={2} sm={1} className="align-items-center pb-5">
                     <Col lg={4} md={3} className="py-3">
                         <Card.Img className="contact-image" src="https://image.freepik.com/free-photo/tourist-presenting-something_1368-7018.jpg" />
                         <Card.Img className="contact-image" src="https://image.freepik.com/free-photo/traveling-concept-with-landmarks_23-2149153261.jpg" />
                     </Col>
+                    {/* describtion  */}
                     <Col lg={8} md={9}>
                         <Card.Title className="text-start fs-3 fw-bold text-success" style={{ fontFamily: "cursive" }}>How to contact with us</Card.Title>
                         <Card.Text className="text-start">

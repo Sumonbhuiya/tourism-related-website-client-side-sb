@@ -20,7 +20,7 @@ If you visit this [Project](https://tourisn-or-delivery-website.web.app/), you c
 Where I use React Router to connect each other.
 This is actually a web app type project for using react router.
 
-For clint side here use dynamic api or a different server like "heroku".\
+For client side here use dynamic api or a different server like "heroku".\
 And for get, push, delete information here use "Mongodb".
 
 There also have some private route. which is not open until login.\

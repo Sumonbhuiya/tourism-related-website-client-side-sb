@@ -3,7 +3,6 @@ import { Row } from 'react-bootstrap';
 import Expert from '../Expart/Expert';
 
 const Exparts = () => {
-
     const [exparts, setExparts] = useState([]);
 
     useEffect(() => {

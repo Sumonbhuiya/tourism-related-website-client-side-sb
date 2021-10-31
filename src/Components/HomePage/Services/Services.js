@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
+import useAuth from '../../../Hooks/useAuth';
 import Service from '../Service/Service';
 import './Services.css'
 
 const Services = () => {
+    const { isLoading } = useAuth();
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -12,6 +14,10 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
+    // show spinner 
+    if (isLoading) {
+        return <Spinner animation="border" variant="warning" />
+    }
     return (
         <div className="fixed-background">
             {/* offer header  */}
