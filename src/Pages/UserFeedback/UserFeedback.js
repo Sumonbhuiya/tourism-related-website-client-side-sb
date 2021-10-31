@@ -48,7 +48,7 @@ const UserFeedback = () => {
                                     <Link className=" text-primary fw-bold text-decoration-none" to="/manage_service"><i className="fas fa-user-circle"></i> Service List</Link>
                                 </Card.Text>
                                 <Card.Text className="text-start">
-                                    <Link className=" text-primary fw-bold text-decoration-none" to="/feedback"><i className="fas fa-comment-dots"></i> See Feedback</Link>
+                                    <Link className=" text-warning fw-bold text-decoration-none" to="/feedback"><i className="fas fa-comment-dots"></i> See Feedback</Link>
                                 </Card.Text>
                                 <Card.Text className="text-start">
                                     <Link className=" text-primary fw-bold text-decoration-none" to="/my-order"><i className="far fa-user-circle"></i> My Service</Link>

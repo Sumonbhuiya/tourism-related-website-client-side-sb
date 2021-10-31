@@ -72,7 +72,7 @@ const ManageOrder = () => {
                             {/* side button  */}
                             <Col lg={2} md sm={12} className="py-3">
                                 <Card.Text className="text-start">
-                                    <Link className=" text-primary fw-bold text-decoration-none" to="/manage_service"><i className="fas fa-user-circle"></i> Service List</Link>
+                                    <Link className=" text-warning fw-bold text-decoration-none" to="/manage_service"><i className="fas fa-user-circle"></i> Service List</Link>
                                 </Card.Text>
                                 <Card.Text className="text-start">
                                     <Link className=" text-primary fw-bold text-decoration-none" to="/feedback"><i className="fas fa-comment-dots"></i> See Feedback</Link>
