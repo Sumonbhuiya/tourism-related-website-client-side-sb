@@ -5,6 +5,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import AuthProvider from './Contexts/AuthProvider';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import AddService from './Pages/AddService/AddService';
+import ContactUs from './Pages/ContactUs/ContactUs';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import ManageOrder from './Pages/ManageOrder/ManageOrder';
@@ -43,6 +44,9 @@ function App() {
             </PrivateRoute>
             <Route path="/about_us">
               <AboutUs></AboutUs>
+            </Route>
+            <Route path="/contact_us">
+              <ContactUs></ContactUs>
             </Route>
             <Route path="/feedback">
               <UserFeedback></UserFeedback>

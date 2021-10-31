@@ -24,10 +24,10 @@ const MyOrder = () => {
             <Container className="bg-light mt-5" style={{ fontFamily: "cursive" }}>
                 {/* find user order  */}
                 <Row xs lg={2} md sm={1} className="align-items-center py-3">
-                    <Col md={12} className="py-3">
+                    <Col md={6} lg={6} className="py-3">
                         <Card.Img className="rounded" style={{ height: "100%" }} src="https://image.freepik.com/free-vector/beach-holiday-with-summer-beach-items-opened-suitcase_1308-65486.jpg" />
                     </Col>
-                    <Col md={12} className="py-3">
+                    <Col md={6} lg={6} className="py-3">
                         <h2 className="pb-2 text-success">Orders by using your email</h2>
                         {
                             orderquantity.map(service => <ShowMyOrder
