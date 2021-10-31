@@ -104,7 +104,12 @@ const ManageOrder = () => {
                                                     <td>{service.name}</td>
                                                     <td>{service.email}</td>
                                                     <td>{service.order_id}</td>
-                                                    <td><Button variant="warning" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
+                                                    {
+                                                        service.status === 'Accept' ?
+                                                            <td><Button className="text-white bg-success" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
+                                                            :
+                                                            <td><Button className="text-white bg-warning" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
+                                                    }
                                                     <td><Button variant="danger" onClick={() => handelDelete(service._id)}><i className="fas fa-trash-alt"></i></Button></td>
                                                 </tr>
                                             )}
