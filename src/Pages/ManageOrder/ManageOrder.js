@@ -29,7 +29,12 @@ const ManageOrder = () => {
                 .then(data => {
                     if (data.modifiedCount > 0) {
                         alert('Updated successfully')
-                        window.location.reload(false);
+                        // window.location.reload(false);
+
+                        // show update data 
+                        fetch(`https://pure-island-78807.herokuapp.com/use_services`)
+                            .then(res => res.json())
+                            .then(data => setManageService(data));
                     }
                 })
         }

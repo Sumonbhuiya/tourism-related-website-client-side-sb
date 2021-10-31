@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import AnsQuestion from '../../Components/AnsQuextion/AnsQuestion';
 import ShowMyOrder from '../../Components/ShowMyOrder/ShowMyOrder';
 import useAuth from '../../Hooks/useAuth';
@@ -21,16 +21,21 @@ const MyOrder = () => {
 
     return (
         <div>
-            <Container className="pb-4 bg-light mt-5" style={{ fontFamily: "cursive" }}>
-                <h1 className="py-4 text-success text-uppercase pb-4">Orders by using your email</h1>
+            <Container className="bg-light mt-5" style={{ fontFamily: "cursive" }}>
                 {/* find user order  */}
-                <Row xs lg={2} md sm={1} className="g-3 align-items-center pb-5">
-                    {
-                        orderquantity.map(service => <ShowMyOrder
-                            key={service._id}
-                            service={service}>
-                        </ShowMyOrder>)
-                    }
+                <Row xs lg={2} md sm={1} className="align-items-center py-3">
+                    <Col md={12} className="py-3">
+                        <Card.Img className="rounded" style={{ height: "100%" }} src="https://image.freepik.com/free-vector/beach-holiday-with-summer-beach-items-opened-suitcase_1308-65486.jpg" />
+                    </Col>
+                    <Col md={12} className="py-3">
+                        <h2 className="pb-2 text-success">Orders by using your email</h2>
+                        {
+                            orderquantity.map(service => <ShowMyOrder
+                                key={service._id}
+                                service={service}>
+                            </ShowMyOrder>)
+                        }
+                    </Col>
                 </Row>
             </Container>
             {/* call different route  */}

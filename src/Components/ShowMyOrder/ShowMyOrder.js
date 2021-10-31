@@ -7,6 +7,7 @@ const ShowMyOrder = (props) => {
     const { _id, order_id, status } = props.service;
 
     const [services, setServices] = useState([]);
+    const [orderUser, setOrderUser] = useState([]);
 
     useEffect(() => {
         // load data from database for load services
@@ -28,10 +29,17 @@ const ShowMyOrder = (props) => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     if (data.deletedCount) {
                         alert('Cancel successfully')
-                        window.location.reload(false);
+                        // window.location.reload(false);
+
+                        // hide order from user 
+                        fetch(`https://pure-island-78807.herokuapp.com/use_services`)
+                            .then(res => res.json())
+                            .then(data => setOrderUser(data));
+
+                        const remaining = orderUser.filter(service => service._id !== id);
+                        setServices(remaining)
                     }
 
                 })

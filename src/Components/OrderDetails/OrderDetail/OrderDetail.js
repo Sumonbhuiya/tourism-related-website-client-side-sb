@@ -37,11 +37,11 @@ const OrderDetail = (props) => {
                         <Card.Img className="rounded pb-2 cover-image" src={img} />
                     </Col>
                     <Col xs lg={12} md={12} sm={12} className="align-items-center">
-                        <Card.Title className="text-start text-primary"><span className="text-dark fw-bold">Place: </span>{name}</Card.Title>
+                        <Card.Title className="text-start text-primary"><span className="text-dark fw-bold">Location: </span>{name}</Card.Title>
                         <Row lg={1} xs={1} md sm={1} className="align-items-center pb-2">
                             <Col lg={6} xs={6} sm={6}>
                                 <Card.Text className="text-start text-muted fw-bold">
-                                    <span className="text-dark fw-bold">Amount: </span> {price}
+                                    <span className="text-dark fw-bold">Tour Cost: </span> {price} per pax
                                 </Card.Text>
                             </Col>
                             <Col lg={6} xs={6} sm={6}>
@@ -51,7 +51,7 @@ const OrderDetail = (props) => {
                             </Col>
                         </Row>
                         <Card.Text className="text-start text-muted">
-                            <Col className="text-muted fw-bold pb-2"><span className="text-dark fw-bold">Only For: </span>{time}</Col>
+                            <Col className="text-muted fw-bold pb-2"><span className="text-dark fw-bold">Tout Duration: </span>{time}</Col>
                             <Col className="text-muted"><span className="text-dark fw-bold">About {name}: </span>{describe}</Col>
                         </Card.Text>
                     </Col>
