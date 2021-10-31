@@ -29,12 +29,12 @@ const AddService = () => {
             <div className="service-background">
                 <h2 className="pt-5 text-white text-uppercase" style={{ fontFamily: "cursive" }}>Add a new Place here</h2>
                 <form className="add-service form-background" onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" />
-                    <input {...register("img", { required: true })} placeholder="image url" />
+                    <input {...register("name", { required: true, maxLength: 20 })} placeholder="name Like(Rome (Italy))" />
+                    <input {...register("img", { required: true })} placeholder="image url (link)" />
                     <textarea {...register("describe", { required: true })} placeholder="description" />
-                    <input type="text" {...register("price", { required: true })} placeholder="Cost" />
-                    <input type="text" {...register("time", { required: true })} placeholder="How many days?" />
-                    <input type="text" {...register("rating", { required: true })} placeholder="Rating" />
+                    <input type="text" {...register("price", { required: true })} placeholder="Cost Like($amount)" />
+                    <input type="text" {...register("time", { required: true })} placeholder="How many days? Like(1 Day)" />
+                    <input type="text" {...register("rating", { required: true })} placeholder="Rating Like(5.0 Good)" />
                     <input style={{ fontFamily: "cursive" }} type="submit" value="Add" />
                 </form>
                 <br />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Image, Nav, Navbar, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Header = () => {
@@ -18,17 +18,17 @@ const Header = () => {
                         <Nav className="me-auto">
                             {user.uid || user.email ?
                                 <Nav>
-                                    <Nav.Link as={Link} className="text-warning" to="/home">Home</Nav.Link>
-                                    <Nav.Link as={Link} to="/my-order">My Orders</Nav.Link>
-                                    <Nav.Link as={Link} to="/manage_service">Manage All Orders</Nav.Link>
-                                    <Nav.Link as={Link} to="/add_service">Add A New Service</Nav.Link>
-                                    <Nav.Link as={Link} to="/contact_us">Contact Us</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/home">Home</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/my-order">My Orders</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/manage_service">Manage All Orders</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/add_service">Add A New Service</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/contact_us">Contact Us</Nav.Link>
                                 </Nav>
                                 :
                                 <Nav>
-                                    <Nav.Link as={Link} className="text-danger" to="/home">Home</Nav.Link>
-                                    <Nav.Link as={Link} className="text-danger" to="/about_us">About</Nav.Link>
-                                    <Nav.Link as={Link} className="text-danger" to="/contact_us">Contact Us</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/home">Home</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/about_us">About</Nav.Link>
+                                    <Nav.Link as={NavLink} activeStyle={{ color: "#ffce3e", borderBottom: "1px solid #fff" }} to="/contact_us">Contact Us</Nav.Link>
                                 </Nav>
                             }
                         </Nav>
