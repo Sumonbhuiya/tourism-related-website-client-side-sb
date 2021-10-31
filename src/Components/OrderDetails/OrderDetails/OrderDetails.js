@@ -24,7 +24,6 @@ const OrderDetails = () => {
 
     return (
         <div className="bg-light">
-            <h1 className="pt-5 text-dark text-uppercase">See Details</h1>
             <Container className="pb-4" style={{ fontFamily: "cursive" }}>
                 {/* find services  */}
                 <Row xs lg={2} md sm={1} className="align-items-center py-5">

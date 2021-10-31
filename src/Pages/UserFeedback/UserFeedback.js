@@ -60,8 +60,8 @@ const UserFeedback = () => {
                             {/* table for show all feedbacks  */}
                             <Col xs lg={10} md sm={12} className="align-items-center bg-light" style={{ fontFamily: "cursive" }}>
                                 <Table responsive striped hover>
-                                    <thead>
-                                        <tr>
+                                    <thead className="bg-secondary">
+                                        <tr className="text-white">
                                             <th>Email</th>
                                             <th>About</th>
                                             <th>Description</th>
@@ -76,7 +76,7 @@ const UserFeedback = () => {
                                                     <td>{opinion.email}</td>
                                                     <td>{opinion.about}</td>
                                                     <td>{opinion.describe}</td>
-                                                    <td><Button variant="secondary" onClick={() => handelDelete(opinion._id)}><i className="fas fa-trash-alt"></i></Button></td>
+                                                    <td><Button variant="danger" onClick={() => handelDelete(opinion._id)}><i className="fas fa-trash-alt"></i></Button></td>
                                                 </tr>
                                             )}
                                     </tbody>

@@ -87,8 +87,8 @@ const ManageOrder = () => {
                             {/* table for see orders  */}
                             <Col xs lg={10} md sm={12} className="align-items-center bg-light" style={{ fontFamily: "cursive" }}>
                                 <Table responsive hover>
-                                    <thead>
-                                        <tr>
+                                    <thead className="bg-dark">
+                                        <tr className="text-white">
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Order Id</th>
@@ -104,8 +104,8 @@ const ManageOrder = () => {
                                                     <td>{service.name}</td>
                                                     <td>{service.email}</td>
                                                     <td>{service.order_id}</td>
-                                                    <td><Button variant="secondary" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
-                                                    <td><Button variant="secondary" onClick={() => handelDelete(service._id)}><i className="fas fa-trash-alt"></i></Button></td>
+                                                    <td><Button variant="warning" onClick={() => handelAccept(service._id)}>{service.status}</Button></td>
+                                                    <td><Button variant="danger" onClick={() => handelDelete(service._id)}><i className="fas fa-trash-alt"></i></Button></td>
                                                 </tr>
                                             )}
                                     </tbody>
